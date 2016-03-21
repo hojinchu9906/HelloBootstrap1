@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--IE의 경우 최신 버전의 IE 모드 버전으로 처리해줌. -->
     <meta name="viewport" content="width=device-width, initial-scale=1"> <!--반응형 웹 페이지를 적용해줌. -->
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap Grid System1</title>
+    <title>그리드 이해</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet"> <!-- 부트스트랩 CSS 파일 적용해줌. -->
@@ -35,7 +35,7 @@
         .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10,
         .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{
             border: 1px solid blue;
-            padding: 10px;
+            padding: 1px;
         }
 
         .row{
@@ -51,43 +51,51 @@
     <div class="container">
     <!-- <div class="container-fluid">  -->
         <div class="row">
-            <!--
-                col-md-1로 12개의 그리드 구성
-            -->
-            <div class="col-md-1">첫번째 column</div>
-            <div class="col-md-1">두번째 column</div>
-            <div class="col-md-1">세번째 column</div>
-            <div class="col-md-1">네번째 column</div>
-            <div class="col-md-1">다섯번째 column</div>
-            <div class="col-md-1">여섯번째 column</div>
-            <div class="col-md-1">일곱번째 column</div>
-            <div class="col-md-1">여덟번째 column</div>
-            <div class="col-md-1">아홉번째 column</div>
-            <div class="col-md-1">열번째 column</div>
-            <div class="col-md-1">열한번째 column</div>
-            <div class="col-md-1">열두번째 column</div>
+            <div class="col-md-8">8개 columns
+                <div class="row">
+                    <div class="col-md-4">
+                        내부 12개 그리드 중 4개 컬럼들
+                    </div>
+                    <div class="col-md-8">
+                        내부 12개 그리드 중 8개 컬럼들
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">4개 columns
+                <div class="row">
+                    <div class="col-md-6">
+                        내부 12개 그리드 중 6개 컬럼들
+                    </div>
+                    <div class="col-md-6">
+                        내부 12개 그리드 중 6개 컬럼들
+                    </div>
+                </div>
+            </div>
         </div>
+
+
+
+
+
+
+
         <div class="row">
-            <!--
-                col-md-8, col-md-4를 이용한 그리드 구성.
-            -->
-            <div class="col-md-8">8개 columns</div>
-            <div class="col-md-4">4개 columns</div>
+            <div class="col-md-5">
+                5개 columns
+            </div>
+            <div class="col-md-5 col-md-offset-2">
+                5개 columns, 2개 오프셋 칼럼들.
+            </div>
         </div>
+
+
         <div class="row">
-            <!--
-                col-md-4 3개로 구성된 그리드 시스템.
-            -->
-            <div class="col-md-4">4개 columns</div>
-            <div class="col-md-4">4개 columns</div>
-            <div class="col-md-4">4개 columns</div>
-        </div>
-        <div class="row">
-            <!--
-                col-md-6 2개로 구성된 그리드 시스템.
-            -->
-            <div class="col-md-6">6개 columns</div>
-            <div class="col-md-6">6개 columns</div>
+            <div class="col-md-4">
+                4개 columns
+            </div>
+            <div class="col-md-7 col-md-offset-1">
+                7개 columns, 1개 오프셋 칼럼들.
+            </div>
         </div>
     </div>
 
