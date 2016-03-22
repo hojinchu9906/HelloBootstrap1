@@ -35,12 +35,14 @@
         .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10,
         .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{
             border: 1px solid blue;
-            padding: 1px;
         }
 
         .row{
             margin-bottom: 4px;
             margin-top: 4px;
+        }
+        .darkness{
+            padding:10px; border-color: green; background-color: #c0c0c0;
         }
     </style>
 </head>
@@ -53,20 +55,20 @@
         <div class="row">
             <div class="col-md-8">8개 columns
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-4 darkness">
                         내부 12개 그리드 중 4개 컬럼들
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-8 darkness">
                         내부 12개 그리드 중 8개 컬럼들
                     </div>
                 </div>
             </div>
-            <div class="col-md-8">4개 columns
+            <div class="col-md-4">4개 columns
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 darkness">
                         내부 12개 그리드 중 6개 컬럼들
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 darkness">
                         내부 12개 그리드 중 6개 컬럼들
                     </div>
                 </div>
@@ -74,7 +76,24 @@
         </div>
 
 
-
+        <div class="row">
+            <div class="col-sm-3">
+                small sidebar
+            </div>
+            <div class="col-sm-9">
+                <div class="row">
+                    <div class="col-sm-3 darkness">컨텐츠1 내부 3개 컬럼들</div>
+                    <div class="col-sm-3 darkness">컨텐츠1 내부 3개 컬럼들</div>
+                    <div class="col-sm-3 darkness">컨텐츠1 내부 3개 컬럼들</div>
+                    <div class="col-sm-3 darkness">컨텐츠1 내부 3개 컬럼들</div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 darkness">컨텐츠2 내부 4개 컬럼들</div>
+                    <div class="col-sm-4 darkness">컨텐츠2 내부 4개 컬럼들</div>
+                    <div class="col-sm-4 darkness">컨텐츠2 내부 4개 컬럼들</div>
+                </div>
+            </div>
+        </div>
 
 
 
